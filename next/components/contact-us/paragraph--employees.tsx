@@ -10,7 +10,7 @@ export function ParagraphEmployees({ paragraph }: { paragraph: Employees }) {
   return (
     <div>
         <div>
-            <h1 className=" font-semibold text-lg py-4">Do you want to hear more about Wunder? Contact us</h1>
+            <h1 className=" font-semibold text-lg py-4">{t("Do you want to hear more about Wunder? Contact us")}</h1>
         </div>
       <div className="flex justify-start items-center">
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

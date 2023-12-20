@@ -5,15 +5,18 @@ import LinkedInIcon from "@/styles/icons/linkedin.svg";
 import TwitterIcon from "@/styles/icons/twitter.svg";
 import YouTubeIcon from "@/styles/icons/youtube.svg";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 export function FollowUs() {
+    const { t } = useTranslation();
     const [pageUrl, setPageUrl] = useState<string>("wunder.io");
     return (
         <div className="py-10">
             <div>
-                <h1 className="text-center text-primary-500 font-bold text-2xl">Follow Us</h1>
+                <h1 className="text-center text-primary-500 font-bold text-2xl">{t("Follow Us")}</h1>
             </div>
             <div>
-                <p className="text-center text-sm pb-2 font-semibold">Connect with various social media platforms</p>
+                <p className="text-center text-sm pb-2 font-semibold">{t("Connect with various social media platforms")}</p>
             </div>
             <div className="flex items-center justify-around">
                 <div>
